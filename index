@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title></title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="styles.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+  </head>
+  <body>
+      <header id="header">
+          <div class="logo">
+            <img
+              id="header-img"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN25OchviuzZaUhiq6U3QOC9omtvrT-ChkEQ&s"
+              alt="santa claus"/>
+              <span class="the-product-logo"></span>
+          </div>
+          <nav id="nav-bar">
+            <ul class="nav-links">
+              <li><a href="#email1" class="nav-link">Email</a></li>
+              <li><a href="#audio" class="nav-link">Audio</a></li>
+              <li><a href="#for_sale" class="nav-link">Book</a></li>
+            </ul>
+          </nav>
+      </header>
+      <br>
+      <div id="email1">
+         <section id="email-section">
+          <h2>Complete Collection</h2>
+            <h3> In One Click</h3>
+          <form action="https://www.freecodecamp.com/email-submit"
+           id="form">
+           <input id="email" type="email" required placeholder="Enter your email address"
+           name="email">
+           <input type="submit" id="submit" value="GET STARTED">
+          </form>
+         </section>
+         </div>
+         <section id="features">
+           <div class="feature">
+            <i class="ri-git-repository-fill ri-4x icon"></i>
+            <div>
+              <h2>Our best books</h2>
+              <p>Each book guarantees an immersive 
+                reading for the reader so that this 
+                Christmas they can do something different
+                 and creative.</p>
+            </div>
+           </div>
+           <div class="feature">
+            <i class="ri-truck-line ri-4x icon"></i>
+            <div>
+            <h2>Shipping to the whole country</h2>
+            <p>We take care of the packaging,
+              so on of the packaging of your
+              book and then its distribution 
+              so that you have it as soon as 
+              possible.</p>
+          </div>
+           </div>
+           <div class="feature">
+            <i class="ri-money-dollar-circle-fill ri-4x icon"></i>
+            </i>
+           <div>
+            <h2>Take advantage of the Christmas sales </h2>
+            <p>We went crazy with the prices this month 
+              so everyone can have this book.</p>
+           </div>
+          </div>
+         </section>
+       <section id="audio">
+         <iframe
+         id="video"
+          height="400"
+          src="https://www.youtube.com/embed/TyTeK7EokCY?si=BTXbW8sz9cnKxqAB" 
+          title="YouTube video player" 
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+    </section> 
+    <br>
+    <section id="for_sale">
+      <h2 class="sales">For Sale</h2>
+      <div class="product-cards">
+      <div class="card">
+        <div class="product-image product1"></div>
+        <div class="inner-card">
+        <div class="author">Eliza Evans</div>
+        <h1 class="header">Christmas novels</h1>
+        <p class="content">
+          In these novels, characters experience emotional 
+          transformations that reflect the values 
+          of the season: hope, forgiveness, and renewal. 
+          In addition, they are usually set in settings full 
+          of warmth and magic, promoting reflection on human ties 
+          and the importance of sharing.
+        </p>
+        <div class="flex">
+          <p class="main-price">$25.99 </p>
+          <p class="old-price">$35.00</p>
+        </div>
+        <button class="add">Add to Books</button>
+      </div>
+      </div>
+      <div class="card">
+      <div class="product-image product2"></div>
+      <div class="inner-card">
+      <div class="author">Eric Carle</div>
+      <h1 class="header">Christmas stories</h1>
+      <p class="content">
+        With endearing stories that range from 
+        the magical to the moral, such as Dickens' 
+        classic "A Christmas Carol," it invites us 
+        to reflect on human values in the most special
+        time of the year. Each story conveys a message 
+        of hope and redemption, ideal to enjoy at the 
+        holidays.
+      </p>
+      <div class="flex">
+        <p class="main-price">$65.50 </p>
+        <p class="old-price">$75.50</p>
+      </div>
+      <button class="add">Add to Books</button>
+    </div>
+    </div>
+      <div class="card">
+        <div class="product-image product3"></div>
+        <div class="inner-card">
+        <div class="author">Dr. Seuss</div>
+        <h1 class="header">25 Christmas Books</h1>
+     
+       <p class="content">
+        "The Grinch" is a grumpy being
+         who hates Christmas and decides
+         to steal it from the inhabitants
+         of Who-ville. However, upon seeing
+         his joy despite his theft, he discovers
+         that the true Christmas spirit is
+         in the heart. A story of redemption
+         and the power of generosity.
+       </p>
+       <div class="flex">
+        <p class="main-price">$99.99 </p>
+        <p class="old-price">$110.99</p>
+      </div>
+      <button class="add">Add to Books</button>
+    </div>
+    </div>
+    </div>
+   </div>
+   <footer>
+<div class="footer-content">
+  <p>&copy; 2024 
+My website all rights reserved.</p>
+  <nav>
+    <ul class="footer">
+      <li><a href="#policy_and_privacy">
+Policy and privacy</a></li>
+      <li><a href="#terms_and_condition">Terms and condition
+</a></li>
+      <li><a href="#contact">Contact
+</a></li>
+    </ul>
+  </nav>
+</div>
+</footer>
+    </section>
+  </body>
+</html>
