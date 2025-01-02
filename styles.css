@@ -1,0 +1,322 @@
+:root{
+    --white:#ffffff;
+    --red:#f10f0f;
+    --beige:rgb(248, 248, 224);
+    --text:rgb(12, 12, 12);
+    --text1:rgb(198, 198, 198);
+}
+*{
+    margin:0;
+}
+html {
+    height: 100%;
+}
+body{
+    
+    background-color: var(--beige);
+    margin-top:60px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    min-height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    width: 100%;
+    z-index:1000;
+}
+#header-img{
+    width: 60px;
+    object-fit: contain;
+  }
+#nav-bar {
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      top: 0; 
+      background-color: var(--white);
+      padding: 10px 0;
+     
+  }
+  .nav-links {
+    list-style:none;
+    display: flex;
+  }
+  
+  .nav-links, a{
+      text-decoration: none;
+      color:var(--red);
+      padding: 0 10px;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .the-product-logo{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #email-section{
+    margin: 100px; 
+
+  }
+  input{
+    padding: 8px;
+    border-radius: 5px;
+    border:1px solid var(--red);
+  }
+  #submit{
+    background-color: var(--red);
+    color:var(--white) ;
+    cursor: pointer;
+  }
+  section::before{
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  section{
+    margin: 40px 20px;
+    text-align: center;
+  }
+  h2, h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    
+}
+.sales{
+margin-top:50px;
+font-size:40px;
+color:var(--red);
+}
+.icon{
+    color:var(--red);
+margin-right: 20px;
+}
+#features{
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+
+}
+.feature{
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-start; 
+    margin: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.feature div{
+    max-width: calc(100% - 40px);
+}
+.feature h2 {
+    margin-top: 0;
+}
+#video{
+    width: 60%;
+    margin-top: 60px;
+}
+.product-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0;
+
+}
+.product-image {
+    display: flex;
+    flex-direction: row;
+    width: 140%;
+    height: 400px; 
+    background-size: cover; 
+    background-position: center; 
+    border: 1px solid var(--red);
+    border-radius: 10px 10px 0 0;
+    margin-right: 20px;
+    top: 0;
+    flex-grow: 0;
+}
+.product1{
+    background-image: url(https://www.thatartsyreadergirl.com/wp-content/uploads/2022/07/TTT-2022ChristmasReleases.jpg);
+}
+.product2{
+    background-image: url(https://dayswithgrey.com/wp-content/uploads/2022/09/Christmas-Books-for-Kids-Featured-and-101-1024x1024.jpg);
+}
+.product3{
+    background-image: url(https://www.amandaseghetti.com/wp-content/uploads/2019/12/square-25-Christmas-Books.png);
+}
+.card {
+    display: flex; 
+    justify-content: flex-start;
+    align-items: flex-start; 
+    background-color: var(--white);
+    border-radius: 10px;
+    width: 80%;
+    margin:20px auto;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.content {
+    display: flex;                     
+    align-items: center;              
+    justify-content: space-between;     
+    width: 50%;                        
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: var(--text1);
+    text-align: center;
+    overflow-wrap: break-word;          
+    white-space: normal;                
+    padding: 10px;
+    margin: 0 auto;
+}
+.content  .product-image {
+    max-width: 40%;                     
+    height: auto;                       
+    margin-right: 20px;               
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-price{
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+}
+.old-price{
+  text-decoration: line-through;
+  color: var(--text);
+ 
+}
+.main-price, .old-price {
+    font-size: 30px;
+    margin-left: -20px;         
+}
+.add {
+    padding: 10px 20px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+.card .inner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+.author{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    color: var(--text);
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;     
+    display: block;
+    width: 100%;        
+    position: relative;
+}
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px 0;
+    color: rgb(4, 4, 4);
+    margin-inline-end: 10px;
+    white-space: nowrap; 
+    overflow: hidden;     
+    display: block;
+    width: 100%;        
+    position: relative;
+}
+.header span {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+footer {
+  background-color: var(--red);
+  color: white;         
+  padding: 20px 0;       
+  position: relative;
+  width: 100%;            
+  bottom: 0;
+}
+
+.footer-content {
+  text-align: center;    
+}
+
+.footer {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  display: inline;
+  margin-right: 20px; 
+}
+
+.footer a {
+  color: white;          
+  text-decoration: none; 
+}
+
+.footer a:hover {
+  text-decoration: underline; 
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media only screen and( 450px < width ){
+    .card{
+        display: flex;
+        max-width: 525px;
+    }
+    .inner-card{
+        width: 300px;
+        padding: 20px;
+    }
+    .product-image{
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+@media only screen and (width >= 1000px){
+   #video{
+    width: 70%;
+   }
+   .product-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   }
+}
